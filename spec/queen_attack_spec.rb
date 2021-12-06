@@ -8,4 +8,7 @@ describe ('#queen_attack?') do
   it('is true if the cooridinates are horizontally in line with each other') do
     expect(queen_attack?(([1,1]), ([1,2]))).to(eq(true))
   end
+  it('is true if the coordinates are vertiaclly in line with each other') do
+    expect(queen_attack?(([1,1]), ([2,1]))).to(eq(true))
+  end
 end

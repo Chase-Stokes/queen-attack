@@ -20,4 +20,7 @@ describe ('#queen_attack?') do
   it('is true if the coordinates are horizontally in line with each other going the other direction') do
     expect(queen_attack?(([2,1]), ([1,2]))).to(eq(true))
   end
+  it('is false if the coordinates are off of the board') do
+    expect(queen_attack?(([2,1]), ([0,2]))).to(eq(false))
+  end
 end

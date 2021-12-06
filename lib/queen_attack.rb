@@ -8,7 +8,7 @@ def queen_attack?(start_point, end_point)
     true
   elsif start_point[1] == end_point[1]
     true
-  elsif start_point[1] - end_point[1] === start_point[0] - end_point[0]
+  elsif (start_point[1] - end_point[1]).abs === (start_point[0] - end_point[0]).abs
     true 
   else
     false

@@ -4,6 +4,11 @@ also_reload 'lib/**/*.rb'
 require 'pry'
 
 def queen_attack?(start_point, end_point)
-  # false
-  
+  if start_point[0] == end_point[0]
+    true
+  elsif start_point[1] == end_point[1]
+    true  
+  else
+    false
+  end
 end

@@ -7,7 +7,9 @@ def queen_attack?(start_point, end_point)
   if start_point[0] == end_point[0]
     true
   elsif start_point[1] == end_point[1]
-    true  
+    true
+  elsif start_point[1] - end_point[1] === start_point[0] - end_point[0]
+    true 
   else
     false
   end
